@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5CAAE69E-7B0A-459B-BD3A-72FCBD6C2A3D}</ProjectGuid>
+    <RootNamespace>MR3300USB</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <StackReserveSize>
+      </StackReserveSize>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\Bar32.bmp" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\buttons.bmp" />
+    <None Include="res\filelarge.bmp" />
+    <None Include="res\filesmall.bmp" />
+    <None Include="res\Home32.bmp" />
+    <None Include="res\main.bmp" />
+    <None Include="res\MR3300USB.ico" />
+    <None Include="res\MR3300USB.rc2" />
+    <None Include="res\MR3300USBDoc.ico" />
+    <None Include="res\Outlook16i.bmp" />
+    <None Include="res\Outlook24i.bmp" />
+    <None Include="res\pages.bmp" />
+    <None Include="res\pages_small.bmp" />
+    <None Include="res\Rabbion.bmp" />
+    <None Include="res\ribbon.mfcribbon-ms" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="res\writelarge.bmp" />
+    <None Include="res\writesmall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2DArray.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="DataDef.h" />
+    <ClInclude Include="Deskland.h" />
+    <ClInclude Include="DevGDI.h" />
+    <ClInclude Include="DialogScroll.h" />
+    <ClInclude Include="DlgChannel.h" />
+    <ClInclude Include="DlgConnect.h" />
+    <ClInclude Include="DlgDDC.h" />
+    <ClInclude Include="DlgDirection.h" />
+    <ClInclude Include="DlgHelp.h" />
+    <ClInclude Include="DlgInterPhone.h" />
+    <ClInclude Include="DlgLogin.h" />
+    <ClInclude Include="DlgParaConfig.h" />
+    <ClInclude Include="DlgResponse.h" />
+    <ClInclude Include="DlgSystemPara.h" />
+    <ClInclude Include="DlgTableAdd.h" />
+    <ClInclude Include="DlgTableMod.h" />
+    <ClInclude Include="ExtSplitter.h" />
+    <ClInclude Include="IniFile.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MeasSwitch.h" />
+    <ClInclude Include="Measure.h" />
+    <ClInclude Include="MR3300USB.h" />
+    <ClInclude Include="MR3300USBDoc.h" />
+    <ClInclude Include="MR3300USBView.h" />
+    <ClInclude Include="NumEdit.h" />
+    <ClInclude Include="OutlookBar.h" />
+    <ClInclude Include="OutlookBarTabCtrl.h" />
+    <ClInclude Include="PcmPlayer.h" />
+    <ClInclude Include="qevent.h" />
+    <ClInclude Include="RemoteBase.h" />
+    <ClInclude Include="RemoteData.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Response.h" />
+    <ClInclude Include="RXDFIND.h" />
+    <ClInclude Include="RXFFM.h" />
+    <ClInclude Include="RXFPSCAN.h" />
+    <ClInclude Include="RXFSAN.h" />
+    <ClInclude Include="RXIQ.h" />
+    <ClInclude Include="RXMSCAN.h" />
+    <ClInclude Include="RXPSCAN.h" />
+    <ClInclude Include="SocketComm.h" />
+    <ClInclude Include="SocketInterface.h" />
+    <ClInclude Include="SocketManager.h" />
+    <ClInclude Include="SocketSA.h" />
+    <ClInclude Include="SpectroView.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StructDef.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Tools.h" />
+    <ClInclude Include="UdpServer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="2DArray.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="Deskland.cpp" />
+    <ClCompile Include="DevGDI.cpp" />
+    <ClCompile Include="DialogScroll.cpp" />
+    <ClCompile Include="DlgChannel.cpp" />
+    <ClCompile Include="DlgConnect.cpp" />
+    <ClCompile Include="DlgDDC.cpp" />
+    <ClCompile Include="DlgDirection.cpp" />
+    <ClCompile Include="DlgHelp.cpp" />
+    <ClCompile Include="DlgInterPhone.cpp" />
+    <ClCompile Include="DlgLogin.cpp" />
+    <ClCompile Include="DlgParaConfig.cpp" />
+    <ClCompile Include="DlgResponse.cpp" />
+    <ClCompile Include="DlgSystemPara.cpp" />
+    <ClCompile Include="DlgTableAdd.cpp" />
+    <ClCompile Include="DlgTableMod.cpp" />
+    <ClCompile Include="ExtSplitter.cpp" />
+    <ClCompile Include="IniFile.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MeasSwitch.cpp" />
+    <ClCompile Include="Measure.cpp" />
+    <ClCompile Include="MR3300USB.cpp" />
+    <ClCompile Include="MR3300USBDoc.cpp" />
+    <ClCompile Include="MR3300USBView.cpp" />
+    <ClCompile Include="NumEdit.cpp" />
+    <ClCompile Include="OutlookBar.cpp" />
+    <ClCompile Include="OutlookBarTabCtrl.cpp" />
+    <ClCompile Include="PcmPlayer.cpp" />
+    <ClCompile Include="RemoteBase.cpp" />
+    <ClCompile Include="RemoteData.cpp" />
+    <ClCompile Include="Response.cpp" />
+    <ClCompile Include="RXDFIND.cpp" />
+    <ClCompile Include="RXFFM.cpp" />
+    <ClCompile Include="RXFPSCAN.cpp" />
+    <ClCompile Include="RXFSAN.cpp" />
+    <ClCompile Include="RXIQ.cpp" />
+    <ClCompile Include="RXMSCAN.cpp" />
+    <ClCompile Include="RXPSCAN.cpp" />
+    <ClCompile Include="SocketComm.cpp" />
+    <ClCompile Include="SocketInterface.cpp" />
+    <ClCompile Include="SocketManager.cpp" />
+    <ClCompile Include="SocketSA.cpp" />
+    <ClCompile Include="SpectroView.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Tools.cpp" />
+    <ClCompile Include="UdpServer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MR3300USB.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MR3300USB.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
