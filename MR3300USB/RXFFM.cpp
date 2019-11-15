@@ -17,7 +17,7 @@ CRXFFM::CRXFFM(void)
 	 sprintf(Cmd, "FREQ 106.8 MHz");
 	 g_pRemote->FastSendCmd(Cmd);
 
-	 sprintf(Cmd, "FREQ:SPAN 40000 kHz");
+	 sprintf(Cmd, "FREQ:SPAN 80000 kHz");
 	 g_pRemote->FastSendCmd(Cmd);
 
 	 sprintf(Cmd, "BAND 250 kHz");

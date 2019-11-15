@@ -34,22 +34,22 @@ IMPLEMENT_DYNAMIC(CDlgParaConfig, CDialogScroll)
 CDlgParaConfig::CDlgParaConfig(CWnd* pParent /*=NULL*/)
 	: CDialogScroll(CDlgParaConfig::IDD, pParent)
 {
-	//MapSpan[80000] = 0;
-	MapSpan[40000] = 0;
-	MapSpan[20000] = 1;
-	MapSpan[10000] = 2;
-	MapSpan[5000] = 3;
-	MapSpan[2000] = 4;
-	MapSpan[1000] = 5;
-	MapSpan[500] = 6;
-	MapSpan[200] = 7;
-	MapSpan[100] = 8;
-	MapSpan[50] = 9;
-	MapSpan[20] = 10;
-	MapSpan[10] = 11;
-	MapSpan[5] = 12;
-	MapSpan[2] = 13;
-	MapSpan[1] = 14;
+	MapSpan[80000] = 0;
+	MapSpan[40000] = 1;
+	MapSpan[20000] = 2;
+	MapSpan[10000] = 3;
+	MapSpan[5000] = 4;
+	MapSpan[2000] = 5;
+	MapSpan[1000] = 6;
+	MapSpan[500] = 7;
+	MapSpan[200] = 8;
+	MapSpan[100] = 9;
+	MapSpan[50] = 10;
+	MapSpan[20] = 11;
+	MapSpan[10] = 12;
+	MapSpan[5] = 13;
+	MapSpan[2] = 14;
+	MapSpan[1] = 15;
 
 	AttRF[0] = 0;
 	AttRF[2] = 1;
@@ -935,53 +935,53 @@ void CDlgParaConfig::OnCbnSelchangeCmbSpan()
 	int nSelect = m_ComSpan.GetCurSel();
 	switch (nSelect)
 	{
-	/*case 0:
+	case 0:
 		nSpan = 80000;
 		g_bSpan = true;
-		break;*/
-	case 0:
-		nSpan = 40000;
 		break;
 	case 1:
-		nSpan = 20000;
+		nSpan = 40000;
 		break;
 	case 2:
-		nSpan = 10000;
+		nSpan = 20000;
 		break;
 	case 3:
-		nSpan = 5000;
+		nSpan = 10000;
 		break;
 	case 4:
-		nSpan = 2000;
+		nSpan = 5000;
 		break;
 	case 5:
-		nSpan = 1000;
+		nSpan = 2000;
 		break;
 	case 6:
-		nSpan = 500;
+		nSpan = 1000;
 		break;
 	case 7:
-		nSpan = 200;
+		nSpan = 500;
 		break;
 	case 8:
-		nSpan = 100;
+		nSpan = 200;
 		break;
 	case 9:
-		nSpan = 50;
+		nSpan = 100;
 		break;
 	case 10:
-		nSpan = 20;
+		nSpan = 50;
 		break;
 	case 11:
-		nSpan = 10;
+		nSpan = 20;
 		break;
 	case 12:
-		nSpan = 5;
+		nSpan = 10;
 		break;
 	case 13:
-		nSpan = 2;
+		nSpan = 5;
 		break;
 	case 14:
+		nSpan = 2;
+		break;
+	case 15:
 		nSpan = 1;
 		break;
 	}
